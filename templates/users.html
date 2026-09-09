@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+<main class="container">
+<div class="card">
+<h2>Korisnici</h2>
+<p class="muted">Pregled korisničkih naloga u demonstracionoj aplikaciji.</p>
+<form class="search">
+<input name="q" value="{{ q }}" placeholder="Pretraži korisnike...">
+<button>Pretraži</button>
+</form>
+<table class="table">
+<thead><tr><th>Ime i prezime</th><th>Korisničko ime</th><th>Uloga</th></tr></thead>
+<tbody>
+{% for u in users %}
+<tr><td>{{ u.name }}</td><td>{{ u.username }}</td><td><span class="badge">{{ u.role }}</span></td></tr>
+{% else %}
+<tr><td colspan="3">Nema rezultata.</td></tr>
+{% endfor %}
+</tbody>
+</table>
+</div>
+</main>
+{% endblock %}
