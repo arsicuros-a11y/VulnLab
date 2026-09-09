@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+<main class="container">
+<div class="card">
+<span class="badge">PRIJAVLJEN KORISNIK</span>
+<h2>Laboratorijski dashboard</h2>
+<p>Dobrodošli, <strong>{{ user }}</strong>.</p>
+<p class="muted">Ova stranica služi za demonstraciju funkcionalnosti web aplikacije. IDS/IPS analiza saobraćaja obavlja se pomoću Suricate u zasebnom laboratorijskom procesu.</p>
+<div class="code">Status: aplikacija je aktivna<br>IDS: Suricata<br>Režim: kontrolisani laboratorijski test</div>
+</div>
+</main>
+{% endblock %}
