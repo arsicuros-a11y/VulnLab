@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+<main class="container">
+<div class="card form">
+<h2>Prijava</h2>
+<p class="muted">Demo prijava za laboratorijsko okruženje.</p>
+<form method="post">
+<label>Korisničko ime</label>
+<input type="text" name="username" required>
+<label>Lozinka</label>
+<input type="password" name="password" required>
+<button style="margin-top:20px">Prijavi se</button>
+</form>
+</div>
+</main>
+{% endblock %}
