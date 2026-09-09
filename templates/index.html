@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+<main class="container">
+<section class="hero">
+<div>
+<span class="badge">LABORATORIJSKO OKRUŽENJE</span>
+<h1>VulnLab</h1>
+<p>Lokalna demonstraciona web aplikacija korišćena kao deo laboratorijskog okruženja za seminarski rad o IDS i IPS sistemima.</p>
+<a class="btn" href="{{ url_for('users') }}">Pregled korisnika</a>
+</div>
+<div class="card">
+<h2>Laboratorija za mrežnu bezbednost</h2>
+<p class="muted">Aplikacija je pokrenuta lokalno u kontrolisanom okruženju i koristi se za demonstraciju detekcije i prevencije mrežnih događaja pomoću Suricate.</p>
+<div class="stats">
+<div><strong>4</strong><span class="muted">Korisnika</span></div>
+<div><strong>IDS</strong><span class="muted">Detekcija</span></div>
+<div><strong>IPS</strong><span class="muted">Prevencija</span></div>
+</div>
+</div>
+</section>
+</main>
+{% endblock %}
